@@ -6,7 +6,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Engine
   name: engines.longhorn.io
 spec:
@@ -62,7 +62,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Replica
   name: replicas.longhorn.io
 spec:
@@ -122,7 +122,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Setting
   name: settings.longhorn.io
 spec:
@@ -159,7 +159,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Volume
   name: volumes.longhorn.io
 spec:
@@ -219,7 +219,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: EngineImage
   name: engineimages.longhorn.io
 spec:
@@ -275,7 +275,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Node
   name: nodes.longhorn.io
 spec:
@@ -327,7 +327,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: InstanceManager
   name: instancemanagers.longhorn.io
 spec:
@@ -379,7 +379,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: ShareManager
   name: sharemanagers.longhorn.io
 spec:
@@ -427,7 +427,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: BackingImage
   name: backingimages.longhorn.io
 spec:
@@ -471,7 +471,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: BackingImageManager
   name: backingimagemanagers.longhorn.io
 spec:
@@ -531,7 +531,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: BackingImageDataSource
   name: backingimagedatasources.longhorn.io
 spec:
@@ -587,7 +587,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: BackupTarget
   name: backuptargets.longhorn.io
 spec:
@@ -644,7 +644,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: BackupVolume
   name: backupvolumes.longhorn.io
 spec:
@@ -697,7 +697,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: Backup
   name: backups.longhorn.io
 spec:
@@ -754,7 +754,7 @@ metadata:
     helm.sh/chart: longhorn-1.2.6
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/instance: longhorn
-    app.kubernetes.io/version: v1.2.3
+    app.kubernetes.io/version: v1.2.6
     longhorn-manager: RecurringJob
   name: recurringjobs.longhorn.io
 spec:
