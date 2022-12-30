@@ -42,7 +42,7 @@ image:
       repository: rancher/mirrored-longhornio-backing-image-manager
       tag: v1.4.0
     supportBundleKit:
-      repository: longhornio/support-bundle-kit
+      repository: rancher/mirrored-longhornio-support-bundle-kit
       tag: v0.0.17
   csi:
     attacher:
