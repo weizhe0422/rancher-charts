@@ -1,0 +1,4 @@
+url: https://github.com/longhorn/charts.git
+subdirectory: charts/longhorn
+commit: 0a6375d9fdc89305ad08ae31e7942cefd72717c7
+version: 101.2.0
