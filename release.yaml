@@ -54,3 +54,7 @@ rancher-vsphere-cpi:
 - 101.1.0+up1.4.1
 rancher-vsphere-csi:
 - 101.1.0+up2.6.2-rancher1
+longhorn:
+- 100.3.0+up1.4.0
+longhorn-crd:
+- 100.3.0+up1.4.0
