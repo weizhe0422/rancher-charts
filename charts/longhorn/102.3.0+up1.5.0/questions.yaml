@@ -694,10 +694,10 @@ Set the value to **0** to disable backup restore."
 	  - When the V2 Data Engine is enabled, each instance-manager pod utilizes 1 CPU core. This high CPU usage is attributed to the spdk_tgt process running within each instance-manager pod. The spdk_tgt process is responsible for handling input/output (IO) operations and requires intensive polling. As a result, it consumes 100% of a dedicated CPU core to efficiently manage and process the IO requests, ensuring optimal performance and responsiveness for storage operations."
   group: "Longhorn V2 Data Engine (Preview Feature) Settings"
   type: boolean
-  default: false
+  default: "false"
 - variable: defaultSettings.offlineReplicaRebuilding
   label: Offline Replica Rebuilding
-  description: ""This setting allows users to enable the offline replica rebuilding for volumes using v2 data engine."
+  description: "This setting allows users to enable the offline replica rebuilding for volumes using v2 data engine."
   group: "Longhorn V2 Data Engine (Preview Feature) Settings"
   required: true
   type: enum
