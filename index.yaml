@@ -282,19 +282,19 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
       catalog.cattle.io/release-name: fleet
     apiVersion: v2
-    appVersion: 0.8.0-rc.3
-    created: "2023-07-07T16:49:42.189557627Z"
+    appVersion: 0.8.0-rc.5
+    created: "2023-07-24T04:57:09.548289699Z"
     dependencies:
     - condition: gitops.enabled
       name: gitjob
       repository: file://./charts/gitjob
     description: Fleet Manager - GitOps at Scale
-    digest: a7c74e33317e5286e3bc7dbed03c2e411646968e10ee6a0e6a4719cc7c0a5281
+    digest: 9e8d9f06cebb57a80f52c0b46530f68d9d0a73fb47d1698c5074e1b11406faee
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet
     urls:
-    - assets/fleet/fleet-102.2.0+up0.8.0-rc.3.tgz
-    version: 102.2.0+up0.8.0-rc.3
+    - assets/fleet/fleet-102.2.0+up0.8.0-rc.5.tgz
+    version: 102.2.0+up0.8.0-rc.5
   - annotations:
       catalog.cattle.io/auto-install: fleet-crd=match
       catalog.cattle.io/certified: rancher
@@ -829,15 +829,15 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
       catalog.cattle.io/release-name: fleet-agent
     apiVersion: v2
-    appVersion: 0.8.0-rc.3
-    created: "2023-07-07T16:49:44.454394413Z"
+    appVersion: 0.8.0-rc.5
+    created: "2023-07-24T04:57:11.517796176Z"
     description: Fleet Manager Agent - GitOps at Scale
-    digest: 786c4560a8b0dc7e71a6bea13f5e74da6eefaf51e7a07073fbd502b5d855f55a
+    digest: 268bd35224c85c97556fab1b59baf3f9b01147d45093a35f46e78f304529a182
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet-agent
     urls:
-    - assets/fleet-agent/fleet-agent-102.2.0+up0.8.0-rc.3.tgz
-    version: 102.2.0+up0.8.0-rc.3
+    - assets/fleet-agent/fleet-agent-102.2.0+up0.8.0-rc.5.tgz
+    version: 102.2.0+up0.8.0-rc.5
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -1240,15 +1240,15 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: fleet-crd
     apiVersion: v2
-    appVersion: 0.8.0-rc.3
-    created: "2023-07-07T16:49:46.812743639Z"
+    appVersion: 0.8.0-rc.5
+    created: "2023-07-24T04:57:13.508393697Z"
     description: Fleet Manager CustomResourceDefinitions
-    digest: e577a2865f9c8b0659651e2c1f3514e6ad5af8e25324e0c7bf756c011b3a7062
+    digest: 62ede74662eba2f62f8eb229b81fd3525b3c1aaab0d486d746b13a7a205e8662
     icon: https://charts.rancher.io/assets/logos/fleet.svg
     name: fleet-crd
     urls:
-    - assets/fleet-crd/fleet-crd-102.2.0+up0.8.0-rc.3.tgz
-    version: 102.2.0+up0.8.0-rc.3
+    - assets/fleet-crd/fleet-crd-102.2.0+up0.8.0-rc.5.tgz
+    version: 102.2.0+up0.8.0-rc.5
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -3803,9 +3803,9 @@ entries:
       catalog.cattle.io/upstream-version: 2.6.0
     apiVersion: v1
     appVersion: 5.2.0
-    created: "2023-07-14T17:31:25.739530944-07:00"
+    created: "2023-07-20T16:54:41.849498695-07:00"
     description: Helm feature chart for NeuVector's core services
-    digest: e9e8af79c790686178e12603e7f555046fd054fa147e0260929748df73415faa
+    digest: 33aa51c4bdbf681233284f5fb0d3733653e8395f998d8d3830fab703f043eead
     home: https://neuvector.com
     icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
     keywords:
@@ -4143,9 +4143,9 @@ entries:
       catalog.cattle.io/release-name: neuvector-crd
     apiVersion: v1
     appVersion: 5.2.0
-    created: "2023-07-14T17:31:25.746325891-07:00"
+    created: "2023-07-20T16:54:41.858037422-07:00"
     description: Helm chart for NeuVector's CRD services
-    digest: 221d6362e172a898a43a5511617ceca9ca22125c1e09703d82df6b93f51d9c0c
+    digest: dfc3d59258284ae8f4ad2ab02e1272b0ed7edf8097ef69c2a55437b117de3f97
     home: https://neuvector.com
     icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
     maintainers:
@@ -4356,6 +4356,37 @@ entries:
     urls:
     - assets/neuvector-crd/neuvector-crd-100.0.0+up2.2.0.tgz
     version: 100.0.0+up2.2.0
+  neuvector-monitor:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: NeuVector Monitor
+      catalog.cattle.io/kube-version: '>=1.18.0-0 < 1.28.0-0'
+      catalog.cattle.io/namespace: cattle-neuvector-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permit-os: linux
+      catalog.cattle.io/provides-gvr: neuvector.com/v1
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/release-name: neuvector-monitor
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/upstream-version: 2.6.0
+    apiVersion: v1
+    appVersion: 5.2.0
+    created: "2023-07-20T20:05:48.905921486-07:00"
+    description: Helm feature chart for NeuVector monitor services
+    digest: bae9814a94e38e5a2b459c7686d1b12854d99fc11ea5523dbfa89a3b34e7ce28
+    home: https://neuvector.com
+    icon: https://avatars2.githubusercontent.com/u/19367275?s=200&v=4
+    keywords:
+    - security
+    maintainers:
+    - email: support@neuvector.com
+      name: becitsthere
+    name: neuvector-monitor
+    sources:
+    - https://github.com/neuvector/neuvector
+    urls:
+    - assets/neuvector-monitor/neuvector-monitor-102.0.3+up2.6.0.tgz
+    version: 102.0.3+up2.6.0
   prometheus-federator:
   - annotations:
       catalog.cattle.io/certified: rancher
@@ -7100,17 +7131,17 @@ entries:
       catalog.cattle.io/release-name: rancher-eks-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
-    appVersion: 1.2.2-rc2
-    created: "2023-07-07T13:40:56.573426188Z"
+    appVersion: 1.2.2-rc3
+    created: "2023-07-18T10:59:49.040601845Z"
     description: A Helm chart for provisioning EKS clusters
-    digest: 72afa6301fd84f3860f6be3886b9454ae78d8be445b35d8917c6cc2edbc23c39
+    digest: 00b1490d7c7e6f4d54769692c8bce5633cd2e7bccaefe58e102280de2d66f218
     home: https://github.com/rancher/eks-operator
     name: rancher-eks-operator
     sources:
     - https://github.com/rancher/eks-operator
     urls:
-    - assets/rancher-eks-operator/rancher-eks-operator-102.1.2+up1.2.2-rc2.tgz
-    version: 102.1.2+up1.2.2-rc2
+    - assets/rancher-eks-operator/rancher-eks-operator-102.1.3+up1.2.2-rc3.tgz
+    version: 102.1.3+up1.2.2-rc3
   - annotations:
       catalog.cattle.io/auto-install: rancher-eks-operator-crd=match
       catalog.cattle.io/certified: rancher
@@ -7358,14 +7389,14 @@ entries:
       catalog.cattle.io/permits-os: linux,windows
       catalog.cattle.io/release-name: rancher-eks-operator-crd
     apiVersion: v2
-    appVersion: 1.2.2-rc2
-    created: "2023-07-07T13:40:58.127657334Z"
+    appVersion: 1.2.2-rc3
+    created: "2023-07-18T10:59:50.752131341Z"
     description: EKS Operator CustomResourceDefinitions
-    digest: a753cefed6efd725e1e4175d1491754fc9c02a836a0059ab2e18c0a04e18aa4b
+    digest: aa3b9273f705e0ac78b7889edbc1b3250bbf641d07bd331fdec35a67d1212b30
     name: rancher-eks-operator-crd
     urls:
-    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-102.1.2+up1.2.2-rc2.tgz
-    version: 102.1.2+up1.2.2-rc2
+    - assets/rancher-eks-operator-crd/rancher-eks-operator-crd-102.1.3+up1.2.2-rc3.tgz
+    version: 102.1.3+up1.2.2-rc3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
@@ -7538,10 +7569,9 @@ entries:
       catalog.cattle.io/upstream-version: 1.0.1
     apiVersion: v1
     appVersion: v1.0.1
-    created: "2022-06-21T11:20:07.473046-07:00"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: 6b501bfc24a841318499dd59cccbd15d2ea9a1f031459cfa22a7281f5e4c3695
+    created: "2023-07-18T14:44:51.659592-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: 460ad4cbf71a859188fd546b0c6c9d113fc01318c9e3ef2ca0b00f7d01c320ff
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -7570,10 +7600,9 @@ entries:
       catalog.cattle.io/upstream-version: 1.0.1
     apiVersion: v1
     appVersion: v1.0.1
-    created: "2022-06-21T11:20:07.472413-07:00"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: fdd4f98e202af33e34b565776eda0eddbd93e6564cf067ad8f9bc80521190bf8
+    created: "2023-07-18T14:44:51.658898-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: 208a1947cab23efeba8a00ba822b77910a844ae347cc0e89f30d7baccc864410
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -7601,10 +7630,9 @@ entries:
       catalog.cattle.io/ui-component: rancher-external-ip-webhook
     apiVersion: v1
     appVersion: v1.0.0
-    created: "2022-06-21T11:20:07.471731-07:00"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: 82dab65b91d9a82955166bfe7fd26675f417e4dcce70749477e750642e5c1b79
+    created: "2023-07-18T14:44:51.658142-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: af6dfa129717fd576c3a6da03ad077a514e17c11c043064db70b0d7ae5656d07
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -7630,10 +7658,9 @@ entries:
       catalog.cattle.io/ui-component: rancher-external-ip-webhook
     apiVersion: v1
     appVersion: v0.1.6
-    created: "2022-05-31T14:08:43.357548586+05:30"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: 233266335123f2e2bd480907ebabe73c524ea899955e85b2e2e614a621005963
+    created: "2023-07-18T14:44:51.656797-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: 731f5811ce5bfaa5a0f997c0a861712d7bfa8fb95e0c3f555d2f6668d739157d
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -7659,10 +7686,9 @@ entries:
       catalog.cattle.io/ui-component: rancher-external-ip-webhook
     apiVersion: v1
     appVersion: v0.1.6
-    created: "2022-05-31T14:08:43.356646058+05:30"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: c8e02ea5c1179883061676f717fae3b9f39ea2d979d49b58194bf0a49404d57d
+    created: "2023-07-18T14:44:51.656245-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: 901f2eeea4c37f777dce4ad5cd5d585d23901e55fc62a2640e988842b5c7625a
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -7688,10 +7714,9 @@ entries:
       catalog.cattle.io/ui-component: rancher-external-ip-webhook
     apiVersion: v1
     appVersion: v0.1.4
-    created: "2022-05-31T14:08:43.355721287+05:30"
-    description: |
-      Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
-    digest: be9c55308434a42f8e101ef8cc595a70f5aecea189007e0203c8a712276264fe
+    created: "2023-07-18T14:44:51.655595-03:00"
+    description: Deploy the external-ip-webhook to mitigate k8s CVE-2020-8554
+    digest: 9cf4f4ca2d831a7c7da5bea59a5ff5c8e42691cf8040a747df60a8793a98dce5
     home: https://github.com/rancher/externalip-webhook
     keywords:
     - cve
@@ -14438,18 +14463,18 @@ entries:
       catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
       catalog.cattle.io/release-name: rancher-webhook
     apiVersion: v2
-    appVersion: 0.3.6-rc1
-    created: "2023-07-11T11:50:07.694820599-05:00"
+    appVersion: 0.3.6-rc2
+    created: "2023-07-20T14:59:40.099358-04:00"
     dependencies:
     - condition: capi.enabled
       name: capi
       repository: ""
     description: ValidatingAdmissionWebhook for Rancher types
-    digest: 3125aeba9b23c5e29074b6d2a52a859ad646d1126d7af13573bca0e7df86bd40
+    digest: 06463b3c6390c20ba7f2cd9583aed6455a9cee7e285d1039127405d7917a60b4
     name: rancher-webhook
     urls:
-    - assets/rancher-webhook/rancher-webhook-2.0.6+up0.3.6-rc1.tgz
-    version: 2.0.6+up0.3.6-rc1
+    - assets/rancher-webhook/rancher-webhook-2.0.6+up0.3.6-rc2.tgz
+    version: 2.0.6+up0.3.6-rc2
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"

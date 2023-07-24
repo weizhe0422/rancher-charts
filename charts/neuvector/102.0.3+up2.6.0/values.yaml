@@ -338,7 +338,7 @@ cve:
   adapter:
     enabled: false
     image:
-      repository: neuvector/registry-adapter
+      repository: rancher/mirrored-neuvector-registry-adapter
       tag: 0.1.0
       hash:
     priorityClassName:
@@ -499,14 +499,3 @@ crdwebhook:
   enabled: true
   type: ClusterIP
 
-awsbilling:
-  enabled: false
-  accountNumber: ""
-  roleName: ""
-  serviceAccount: csp
-  annotations: {}
-  imagePullSecrets:
-  image:
-    repository: neuvector/neuvector-csp-adapter
-    tag: 1.0.0
-    imagePullPolicy: IfNotPresent
